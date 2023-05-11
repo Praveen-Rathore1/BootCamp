@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+">
+	<!-- scope prototype is required only for giving dynamic values -->
+	<bean id="e" class="Employee" scope="prototype">
+		<!-- constructor-arg value="10" type="int" name="sdfsdid" ></constructor-arg -->
+		<constructor-arg value="abcddddd" name="name" type="String"></constructor-arg>
+		<constructor-arg value="address9" name="address" type="String"></constructor-arg>
+		<constructor-arg value="10" name="id" type="int"></constructor-arg>
+		<property name="name">
+			<value>Kumarrrrr</value>
+		</property>
+		<property name="marks">
+			<value>54.28</value>
+		</property>
+	</bean>
+	<bean id="mail" class="com.eg.XyzEMail" scope="singleton">
+		<constructor-arg value="abcd" type="String"></constructor-arg>
+		<constructor-arg value="25" type="int"></constructor-arg>
+	</bean>
+</beans>
